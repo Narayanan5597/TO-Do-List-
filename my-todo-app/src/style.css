@@ -1,0 +1,79 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+body {
+  font-family: 'Roboto', sans-serif; /* Roboto font */
+  background-color: #f4f4f7; /* Light grey background */
+  color: #333; /* Standard text color */
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 8px; /* Slightly rounded corners */
+}
+
+h1 {
+  color: #4a90e2; /* Example primary color */
+  text-align: center; /* Center the header */
+}
+
+input[type="text"], input[type="date"], textarea {
+  padding: 10px;
+  margin-bottom: 10px; /* Add space between inputs */
+  width: calc(100% - 22px); /* Adjust width to account for padding */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%; /* Full-width buttons */
+  margin-top: 10px; /* Space above buttons */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #3a78d4; /* Darker shade on hover */
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-top: 10px; /* More space between tasks */
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:nth-child(even) {
+  background-color: #efefef;
+}
+
+@media (max-width: 600px) {
+  .App {
+      width: 95%;
+      margin: 20px auto;
+  }
+
+  input[type="text"], input[type="date"], textarea, button {
+      width: calc(100% - 22px); /* Adjust width for mobile */
+  }
+}
